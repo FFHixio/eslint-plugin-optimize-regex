@@ -23,7 +23,7 @@
     "test": "npm run eslint && npm run mocha"
   },
   "dependencies": {
-    "regexp-tree": "^0.1.21"
+    "regexp-tree": "^0.1.23"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
