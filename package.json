@@ -20,10 +20,13 @@
   "scripts": {
     "eslint": "eslint .",
     "mocha": "nyc mocha tests --recursive",
-    "test": "npm run eslint && npm run mocha"
+    "test": "npm run eslint && npm run mocha",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "regexp-tree": "^0.1.21"
+    "regexp-tree": "^0.1.21",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "eslint": "^7.0.0",
@@ -33,5 +36,6 @@
   "engines": {
     "node": ">=10"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "snyk": true
 }
